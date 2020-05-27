@@ -1,0 +1,73 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Ebay App {% if title %}- {{title}}{% endif %}</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+<!-- Content start -->
+
+<div class="container">
+    <div class="row" style="margin-bottom: 40px; padding-top: 30px;">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="height:450px; overflow: hidden;">
+                <img class="card-img-top" style="height:200px; overflow: hidden;" src="{% static "images/question.jpg" %}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">About</h5>
+                  <p class="card-text">This app is searching products in <strong>Ebay</strong>. The app uses <strong>Pyhon Django</strong> and <strong>BeautifulSoup</strong>. To go to the original website click below.</p>
+                  <a href="https://www.ebay.com/" class="btn btn-outline-danger">Go to Ebay</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="height:450px; overflow: hidden;">
+                <img class="card-img-top" style="height:200px; overflow: hidden;" src="{% static "images/author.jpg" %}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Author</h5>
+                  <p class="card-text">My name is <strong>Berk Gaffaroğlu</strong>, creator of this app. And I am a full stack developer. I oftenly use python. To see my portfolio click the button below.</p>
+                  <a href="#" class="btn btn-outline-danger">See the portfolio</a> <!---Add your portfolio here.-->
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card" style="height:450px; overflow: hidden;">
+                <img class="card-img-top" style="height:200px; overflow: hidden;" src="{% static "images/code.jpg" %}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">The Code</h5>
+                  <p class="card-text">The app is in the Github repository and deployed to Heroku. App is open to public. To see the code in my Github account click the button below.</p>
+                  <a href="#" class="btn btn-outline-danger">Go to Github repository</a>
+                </div>
+              </div>
+        </div>
+        
+    </div>
+    
+{% block content %} {% endblock %}
+</div>
+<!-- Content end-->
+
+
+<!-- Footer start -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
